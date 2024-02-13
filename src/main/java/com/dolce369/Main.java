@@ -15,8 +15,6 @@ import java.util.Collection;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 @SpringBootApplication
 public class Main {
-    //    @Autowired
-//    CacheService cacheService;
     @Autowired
     Ignite ignite;
 
@@ -36,22 +34,5 @@ public class Main {
             System.out.println("backups: " + config.getBackups());
 
         }
-//        cacheService.buildCaches();
-//        Map<String, CacheConfiguration> caches = cacheService.getCaches();
-//        for (Map.Entry<String, CacheConfiguration> entry : caches.entrySet()) {
-//            String cacheName = entry.getKey(); // Cache name
-//            CacheConfiguration cacheConfig = entry.getValue(); // Cache configuration
-//
-//            // Now you can use cacheName and cacheConfig as needed
-//            System.out.println("Cache Name: " + cacheName);
-//            System.out.println("Cache Configuration: " + cacheConfig.toString());
-//
-//            // For example, you can inspect specific configurations
-//            // System.out.println("Cache Mode: " + cacheConfig.getCacheMode());
-//        }
-
-//        var cache1 = caches.get("cache1");
-//        System.out.println("caches size::" + caches.size());
-//        System.out.println(cache1.getName());
     }
 }
